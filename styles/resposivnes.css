@@ -1,0 +1,204 @@
+        /*SECTION TWO*/
+
+/*@media (max-width: 2560px) {*/
+/*    .s-header p{*/
+/*        font-size: 1.2rem;*/
+/*    }*/
+/*    .offer-box p {*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*    .offer-image{*/
+/*        width: 100px;*/
+/*        height: 100px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 1920px) {*/
+/*    .s-header p{*/
+/*        font-size: 0.8rem;*/
+/*    }*/
+/*    .offer-box p {*/
+/*        font-size: 0.7rem;*/
+/*    }*/
+/*    .offer-image{*/
+/*        width: 80px;*/
+/*        height: 80px;*/
+/*    }*/
+/*}*/
+@media (max-width: 1536px) {
+    .s-header h2 {
+        font-size: 1.5rem;
+    }
+    .s-header p{
+        font-size: 0.65rem;
+    }
+    .offer-box p {
+        font-size: 0.5rem;
+    }
+    .offer-image {
+        width: 70px;
+        height: 70px;
+    }
+    /*SECTION FOUR*/
+    .desc{
+        margin-left: 150px;
+    }
+    .card{
+        width: 700px;
+        height: 700px;
+    }
+    .arrows{
+        top:25%;
+    }
+
+}
+@media (max-width: 1280px) {
+    .s-header h2 {
+        font-size: 1.4rem;
+    }
+    .offer-box p {
+        font-size: 0.5rem;
+    }
+    /*SECTION FOUR*/
+    .card{
+        width: 600px;
+        /*height: 500px;*/
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .rainbow{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .s-header h2 {
+        font-size: 1.2rem;
+    }
+    .offer-box h3{
+        font-size: 0.7rem;
+    }
+    .offer-box p{
+        font-size: 0.6rem;
+    }
+    .offer-image{
+        width: 60px;
+        height: 60px;
+    }
+    /*SECTION FOUR*/
+    .desc{
+        margin-left: 150px;
+    }
+    .card{
+        width: 500px;
+        /*height: 500px;*/
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .rainbow{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 768px) {
+    .s-header h2 {
+        font-size: 1.1rem;
+    }
+    .s-header p{
+        font-size: 0.55rem;
+    }
+    .s-header hr{
+        margin-top: 40px;
+    }
+    .offer-box h3{
+        font-size: 0.65rem;
+    }
+    .offer-box p {
+        font-size: 0.5rem;
+    }
+    .offer-image{
+        height: 55px;
+        width: 55px;
+    }
+    /*SECTION FOUR*/
+    .card{
+        width: 400px;
+        /*height: 500px;*/
+    }
+    .desc{
+        margin-left: 150px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .rainbow{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .s-header h2 {
+        font-size: 1rem;
+    }
+    .offer-image{
+        height: 55px;
+        width: 55px;
+    }
+    /*SECTION FOUR*/
+    .card{
+        width: 350px;
+        /*height: 500px;*/
+    }
+}
+@media (max-width: 475px) {
+    .s-header h2 {
+        font-size: 0.9rem;
+    }
+    .s-header p{
+        font-size: 0.45rem;
+        max-width: 85%;
+        /*font-size: 6rem;*/
+    }
+    .offer-image{
+        height: 55px;
+        width: 55px;
+        margin-bottom: 10px;
+    }
+    .offer-box p{
+        font-size: 0.43rem;
+    }
+    .s-header {
+        padding: 55px;
+    }
+    /*SECTION FOUR*/
+    .card{
+        width: 300px;
+        /*height: 500px;*/
+    }
+
+}
+@media (max-width: 425px) {
+    .offer-box h3{
+        font-size: 0.5rem;
+    }
+    /*SECTION FOUR*/
+    .stack-area{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+}
+@media (max-width: 375px) {
+    .offer-box h3{
+        font-size: 0.55rem;
+    }
+    .offer-box p{
+        font-size: 0.4rem;
+    }
+    /*SECTION FOUR*/
+
+}
+
+        /*SECTION THREE*/

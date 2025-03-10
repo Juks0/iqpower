@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 30px;
+    /*overflow-x: hidden;*/
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 
 .section-one {
     position: relative;
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
     /*display: flex;*/
     /*justify-content: center;*/
@@ -71,25 +72,6 @@ body{
     object-fit: cover;
 }
 
-
-/*@media (min-aspect-ratio:16/9) {*/
-/*    .back-video {*/
-/*        width: 100%;*/
-/*        height: auto;*/
-/*    }*/
-/*}*/
-/*@media (aspect-ratio:9/16) {*/
-/*    .video-wrapper {*/
-/*        width: auto;*/
-/*        height: 100%;*/
-/*        !*transform-origin: center; !* Ensure scaling is centered *!*!*/
-/*    }*/
-/*    .back-video {*/
-/*        width: 20%;*/
-/*        height: 20%;*/
-/*    }*/
-/*}*/
-
 .section-two {
     background-color: white;
     min-height: 75dvh;
@@ -103,8 +85,9 @@ body{
     text-align: center;
     margin: 0 40px;
 }
+
 .s-header{
-    padding: clamp(20px, 3rem, 120px);
+    padding: 75px;
     margin: 0 auto;
     width: fit-content;
     text-align: center;
@@ -120,61 +103,6 @@ body{
     max-width: 50%; /* Responsive width */
     font-size: 1vw;
 }
-@media (max-width: 1536px) {
-    .s-header h2 {
-        font-size: 1.5rem;
-    }
-    .section-two{
-        height:  45dvh;
-    }
-    .offer-image {
-        width: 40px;
-        height: 40px;
-        /*margin-bottom: clamp(10px, 40px, 20px);*/
-    }
-}
-@media (max-width: 1280px) {
-    .s-header h2 {
-        font-size: 1.4rem;
-    }
-}
-@media (max-width: 1024px) {
-    .s-header h2 {
-        font-size: 1.2rem;
-    }
-}
-@media (max-width: 768px) {
-    .s-header h2 {
-        font-size: 1.1rem;
-    }
-}
-@media (max-width: 640px) {
-    .s-header h2 {
-        font-size: 1rem;
-    }
-    .offer-image{
-        height: 40px;
-        width: 40px;
-    }
-}
-@media (max-width: 475px) {
-    /*.section-two{*/
-    /*    width: 230%;*/
-    /*}*/
-    .s-header h2 {
-        font-size: 0.9rem;
-    }
-    .s-header p{
-        font-size: 0.2rem;
-        /*font-size: 6rem;*/
-    }
-    .offer-image{
-        height: 40px;
-        width: 40px;
-        margin-bottom: 30px;
-
-    }
-}
 
 .s-header hr{
     height: 3px;
@@ -182,18 +110,17 @@ body{
     color: #ff0000;
     background-color:#ff0000;
     /*margin: 40px auto;*/
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     width: 12%;
     border-radius: 50px; /* Makes the edges rounded */
 
 }
-.offer-box{
-    /*padding-top: 0px;*/
+.offer-box p {
+    font-size: 2rem;
 }
 .offer-image {
-    /*margin-top: 20px;*/
     width: 90px;
     height: 90px;
     margin-bottom: 30px;
@@ -212,47 +139,16 @@ body{
 .section-three {
     background-image: url("../images/background4.jpg");
     height: 100dvh;
-    position: relative; /* Ensure it stays in the document flow */
-    z-index: 1; /* Higher index so it remains visible */
-}
-.btn-left,.btn-right{
-    position: absolute;
-    z-index: 3;
-    background: rgba(224, 224, 227, 0.43);  /* Gradient for richness */
-    color: #626264  ;
-    padding: 12px 12px;
-    border-radius: 50%;  /* Makes them circular */
-    cursor: pointer;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-    width: 45px;
-    height: 45px;
-    margin-right: 5px;  /* Space between arrows */
-    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    width: 100%;
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center; /* Centers the background image */
+    /*overflow: hidden; !* Prevents scrolling *!*/
+    position: relative; /* Keeps elements in place */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.btn-left:hover,.btn-right:hover {
-    transform: scale(1.1);  /* Slight zoom effect on hover */
-    background: rgba(224, 224, 227, 0.85);  /* Gradient for richness */
-}
-.btn-right{
-    position: absolute;
-    z-index: 3;
-    right: 0.5%;
-    top: 50%;
-}
-.btn-left{
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 1%;
-}
-
-.gallery{
-    position: relative;
-    grid-template-columns: 60px 60px;
-    margin: 0 auto;
-    width: fit-content;
-}
 .section-three h1{
     padding-top: 50px;
     margin: 0 auto;
@@ -260,56 +156,61 @@ body{
     width: fit-content;
     color: #ffffff;
     font-size: 40px;
+    overflow-y: hidden; /* Prevents scrolling */
+
 }
-.gallery-item {
+.gallery-container {
+    width: 100%;
+    /*overflow: hidden; !* Ensures only 4 items are visible *!*/
     position: relative;
-    /*display: inline-block;*/
-    margin-top: 60px;
-    /*margin-left: 5px;*/
-    /*margin-right: 5px;*/
-    height: 640px;
-    transition: transform 0.5s ease;
 }
 
-.gal{
+.gallery {
+    margin: 20px;
+    overflow-y: hidden;
+    display: flex;
+    gap: 20px; /* Ensures consistent spacing */
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0); /* Initial position */
+}
+
+.gallery-item {
+    flex: 0 0 auto; /* Ensures each item maintains its size */
+    width: 500px; /* Same size for all items */
+    height: 800px;
+    /*min-width: calc((100% / 4)); !* Ensures exactly 4 items fit *!*/
+    position: relative;
+    overflow: hidden;
+}
+
+.gal {
     width: 100%;
-    height: 100%;
+    height: 750px;
+    object-fit: cover;
     filter: grayscale(100%) brightness(50%);
     transition: filter 0.5s ease;
 }
-.swiper {
-    width: 100%;
-    height: 100%;
-}
 
-.swiper-slide {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-pagination {
-    --swiper-pagination-bullet-inactive-color: #ffffff;
-    --swiper-pagination-color: red;
+.btn-left, .btn-right {
     position: absolute;
-    /*top: 100px; !* Adjust this value to position it as needed *!*/
-    /*left: 50%; !* Center horizontally *!*/
-    /*transform: translateX(-50%); !* Center horizontally *!*/
-    padding-bottom: 40px;
+    z-index: 3;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    background: rgba(224, 224, 227, 0.6);
+    color: #626264;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 5px;
-    z-index: 10; /* Ensure it stays above the slides */
 }
+
+.btn-left { left: 2%; }
+.btn-right { right: 2%; }
+
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -319,11 +220,8 @@ body{
     color: white;
     font-size: 24px;
     font-weight: bold;
-    opacity: 1;
     transition: opacity 0.6s ease;
 }
-
-
 .gallery-item:hover .gal {
     filter: grayscale(0%) brightness(100%);
 }
@@ -341,14 +239,14 @@ body{
 .section-four {
     position: relative; /* Make sure the parent is positioned relative */
     background-color: white;
-    height: 100dvh; /* Full viewport height */
+    /*height: 100dvh; !* Full viewport height *!*/
     /*width: 100%;*/
     /*position: relative;*/
 }
 
 .stack-area {
     width: 100%;
-    height: 100dvh;
+    /*height: 100dvh;*/
     /*position: relative;*/
     background: white;
     display: flex;
@@ -366,15 +264,23 @@ body{
 }
 .right {
     height: 100dvh;
-    flex-basis: 50%;
-    position: sticky;
+    /*flex-basis: 50%;*/
+    /*flex-shrink: 0;*/
     top: 0;
 }
 .title {
-    width: 420px;
+    width: 800px;
     font-size: 3rem;
     font-weight: 700;
-    line-height: 88px;
+    line-height: 0.9; /* Adjusted line height for better spacing */
+    display: flex;
+    flex-direction: column; /* Each word on a new line */
+    text-align: left; /* Align text if needed */
+}
+
+.title span {
+    display: inline-block;  /* Ensures each word stays separate */
+    white-space: nowrap;    /* Prevents text from wrapping mid-word */
 }
 .sub-title {
     width: 420px;
@@ -394,23 +300,26 @@ body{
     margin-top: 20px;
 }
 .card {
-    width: 750px;
-    height: 750px;
+    object-fit: contain; /* Ensures the whole image stays visible */
+    width: 900px;
+    height: 900px;
     position: absolute;
     padding-top: 150px;
+    justify-content: center;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     opacity: 0;
     transform: scale(0.9);
+    overflow-y: hidden;
 }
 .dof_h3,.sensation,.pimax {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .desc {
     position: absolute;
-    margin-left: 350px;
+    margin-left: 250px;
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -427,6 +336,7 @@ body{
 }
 
 .rainbow {
+    /*z-index: 100;*/
     background-image: linear-gradient(90deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffd5, #0047ff, #7a00ff, #ff00b3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -435,6 +345,8 @@ body{
     animation: rainbow 14s linear infinite;
     background-size: 200% 100%;
     font-size: 3.1rem;
+    overflow-y: hidden;
+    overflow-x: visible;
 }
 
 @keyframes rainbow {
@@ -446,10 +358,10 @@ body{
     padding: 10px 10px;
     position: relative;
     top: 20%;
-    left: -26.7%; /* Align arrows to the left */
+    left: -31.7%; /* Align arrows to the left */
     display: flex;
     z-index: 1000; /* Ensure they stay above other content */
-    justify-content: flex-start; /* Align arrows to the left */
+    justify-content: space-between;
     border: 2px #333333;
 }
 
@@ -462,20 +374,15 @@ body{
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
     width: 45px;
     height: 45px;
+    z-index: 1001;
     margin-right: 5px;  /* Space between arrows */
     transition: transform 0.6s ease, box-shadow 0.3s ease;  /* Smooth hover effects */
-
 }
 
 .arrow-left:hover,.arrow-right:hover                                                 {
     transform: scale(1.1);  /* Slight zoom effect on hover */
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);  /* Enhance shadow on hover */
 }
-
-/*.arrow-left {*/
-/*    margin-right: 5px;  !* Space between arrows *!*/
-/*}*/
-
 .arrow-right {
     margin-left: 5px;
 }
