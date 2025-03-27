@@ -1,12 +1,50 @@
-        /*SECTION TWO*/
-
-
 @media (min-width: 2100px) {
+    .s-header p {
+        font-size: 1rem;
+    }
+    .offer-container h3 {
+      font-size: 1.3rem;
+    }
+    .offer-container p {
+        font-size: 0.85rem;
+    }
+
+    /*SECTION FOUR*/
+    .arrow-left, .arrow-right {
+        width: 60px;
+        height: 60px;
+    }
+        /*SECTION FIVE*/
+    .card{
+        width: 1100px;
+        height: 1100px;
+    }
     .container-five{
         height: 100%;
     }
+    .title{
+        font-size: 3.5rem;
+        overflow-y: hidden;
+    }
+    .title span{
+        font-size: 4rem;
+        overflow-y: hidden;
+    }
+    .sub-title {
+        font-size: 0.9rem;
+    }
+    /*SECTION SIX*/
+    .section-six .map{
+        top: 10%;
+    }
+    .section-five{
+        height: 60dvh;
+    }
 }
 @media (max-width: 1536px) {
+    .section-two{
+        height: 60dvh;
+    }
     .s-header h2 {
         font-size: 1.5rem;
     }
@@ -14,25 +52,38 @@
         font-size: 0.65rem;
     }
     .offer-box p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .offer-image {
         width: 70px;
         height: 70px;
     }
     /*SECTION FOUR*/
+    .left{
+        height: 80dvh;
+    }
+    .right{
+        height: 80dvh;
+    }
     .desc{
         margin-left: 150px;
     }
     .card{
+        top: 20%;
         width: 700px;
         height: 700px;
     }
     .arrows{
-        top: 21%;
-        left: -18%;
+        top: 25%;
+        left: -32%;
     }
     /*SECTION FIVE*/
+    .section-five{
+        height: 65dvh;
+    }
+    .container-five{
+        height: 70%;
+    }
     .section-five h1{
         font-size: 40px;
     }
@@ -44,6 +95,9 @@
         width: 20%;
     }
     /*SECTION SIX*/
+    .section-six{
+        height: 40dvh;
+    }
     .section-six .map {
         right: 3%;
         top: 0;
@@ -67,20 +121,33 @@
         font-size: 0.5rem;
     }
     /*SECTION FOUR*/
+    .left{
+        height: 60dvh;
+    }
+    .right{
+        height: 60dvh;
+    }
     .card{
+        padding-top: 0;
         width: 600px;
         /*height: 500px;*/
     }
     .title{
-        font-size: 2rem;
-    }
-    .rainbow{
         font-size: 2.5rem;
     }
-    .arrows{
-        top: 20%;
-        left: -15%;
+    .rainbow{
+        font-size: 2.8rem;
+        margin-top: 0;
+
     }
+    .sub-title{
+        font-weight: 500;
+    }
+    .arrows{
+        top: 28%;
+        left: -30%;
+    }
+
     /*SECTION FIVE*/
     .c-btn{
         width: 20%;
@@ -96,6 +163,21 @@
 
     }
 @media (max-width: 1024px) {
+    .s-header p {
+        width: 70%;
+    }
+    .full-text {
+        display: none;
+    }
+    .short-text {
+        display: block;
+    }
+    .ultra-short-text{
+        display: none;
+    }
+    .offer-container{
+        margin: 0 80px;
+    }
     .s-header h2 {
         font-size: 1.2rem;
     }
@@ -118,11 +200,11 @@
         /*height: 500px;*/
     }
     .arrows{
-        top: 20%;
-        left: -30%;
+        top: 25%;
+        left: -29%;
     }
     .title{
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
     .rainbow{
         font-size: 2.3rem;
@@ -147,21 +229,27 @@
         color: #000000;
         font-size: 15px;
     }
-
-
 }
 @media (max-width: 768px) {
+    .offer-container{
+        margin: 0 50px;
+    }
+    .section-two{
+        height: 55dvh;
+    }
     .s-header h2 {
         font-size: 1.1rem;
     }
     .s-header p{
+        font-weight: 480;
         font-size: 0.55rem;
+        width: 70%;
     }
     .s-header hr{
         margin-top: 40px;
     }
     .offer-box h3{
-        font-size: 0.65rem;
+        font-size: 0.80rem;
     }
     .offer-box p {
         font-size: 0.5rem;
@@ -169,6 +257,20 @@
     .offer-image{
         height: 55px;
         width: 55px;
+        margin-bottom: 20px;
+    }
+    /*SECTION THREE*/
+    .section-three{
+        height: 85dvh;
+    }
+    .text-overlay{
+        top: 40%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top: 45%
+    }
+    .gal{
+        height: 750px;
     }
     /*SECTION FOUR*/
     .card{
@@ -181,6 +283,8 @@
     }
     .sub-title{
         width: 350px;
+        font-size: 0.60rem;
+        font-weight: 500;
     }
     .title{
         font-size: 1.5rem;
@@ -192,8 +296,11 @@
         right: -5%;
     }
     /*SECTION FIVE*/
+    .section-five{
+        height: 55dvh;
+    }
     .container-five{
-        height: 80%;
+        height: 85%;
     }
     .c-btn{
         width: 30%;
@@ -219,13 +326,19 @@
     }
 }
 @media (max-width: 475px) {
+    .section-two{
+        height: 45dvh;
+    }
     .s-header h2 {
         font-size: 0.9rem;
     }
     .s-header p{
         font-size: 0.45rem;
-        max-width: 85%;
+        /*max-width: 85%;*/
         /*font-size: 6rem;*/
+    }
+    .offer-container{
+        margin: 0 10px;
     }
     .offer-image{
         height: 55px;
@@ -244,37 +357,58 @@
         /*height: 500px;*/
     }
     /*SECTION FIVE*/
-    .container-five{
-        height: 100%;
+    .section-five{
+        height: 50dvh;
     }
+    .container-five{
+        height: 80%;
+    }
+
     .c-btn{
         width: 60%;
     }
 
 }
 @media (max-width: 425px) {
+    /*SECTION TWO*/
+    .section-two{
+        height: 50dvh;
+    }
+    .full-text,.short-text {
+        display: none;
+    }
+    .ultra-short-text{
+        display: block;
+    }
+    .s-header p {
+        width: 100%;
+    }
     .offer-box h3{
         font-size: 0.5rem;
     }
+    /*SECTION THREE*/
+    .swiper{
+        width: 100%;
+    }
     /*SECTION FOUR*/
     .section-four{
-        height: 100dvh;
+        height: 75dvh;
     }
     .stack-area{
         flex-direction: column;
+        height: auto;
     }
     .card{
-        top: 0;
-        width: 100%;
-        height: 100%;
-        /*aspect-ratio: 1/1;*/
+        width: 120%;
+        margin-left: -45px;
+        margin-top: 80px;
     }
     .left{
-        height: 100dvh;
-        overflow-y: hidden;
+        height: 20dvh;
+        /*overflow-y: hidden;*/
     }
     .right{
-        height: auto;
+        height: 20dvh;
     }
     .desc{
         margin-left: 50px;
@@ -282,6 +416,7 @@
     }
     .arrows{
         top: 25%;
+        left: 20%;
     }
     .sub-title{
         width: 90%;
@@ -295,9 +430,19 @@
     .dot-container {
         right: -5%;
     }
+    /*SECTION FIVE*/
+    .section-five p{
+        font-weight: 500;
+    }
+    .s-text{
+        display: block;
+    }
+    .l-text{
+        display: none;
+    }
     /*SECTION SIX*/
     .section-six{
-        height: 100dvh;
+        height: 70dvh;
     }
     .section-six .map {
         top: 50%;
@@ -308,6 +453,7 @@
     }
     }
 @media (max-width: 375px) {
+
     .offer-box h3{
         font-size: 0.55rem;
     }
@@ -342,9 +488,7 @@
         font-size: 1.4rem;
     }
     /*SECTION FIVE*/
-    .container-five{
-        height: 100%;
-    }
+
     .c-btn{
         width: 85%;
     }

@@ -60,71 +60,71 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error: Download button or label not found.");
     }
 
-        // =======================
-        // GALLERY SLIDER (CAROUSEL)
-        // =======================
-        const gallery = document.querySelector('.gallery');
-        const items = document.querySelectorAll('.gallery-item');
-        const btnLeft = document.querySelector('.btn-left');
-        const btnRight = document.querySelector('.btn-right');
+    // =======================
+    // GALLERY SLIDER (CAROUSEL)
+    // =======================
+    const gallery = document.querySelector('.gallery');
+    const items = document.querySelectorAll('.gallery-item');
+    const btnLeft = document.querySelector('.btn-left');
+    const btnRight = document.querySelector('.btn-right');
 
-        let currentIndex2 = 0;
-        let itemWidth; // Defined globally to update dynamically
+    let currentIndex2 = 0;
+    let itemWidth; // Defined globally to update dynamically
 
-        // Function to calculate item width after DOM content loads
-        const calculateItemWidth = () => {
-            if (items.length > 0) {
-                itemWidth = items[0].getBoundingClientRect().width + 20; // More accurate width calculation
-                console.log(`Updated Item width: ${itemWidth}px`);
-            } else {
-                console.error("Error: No gallery items found.");
-            }
-        };
-
-        // Function to update the gallery position based on the current index
-        const updateGalleryPosition = () => {
-            gallery.style.transition = 'transform 0.5s ease';  // Smooth transition
-            gallery.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
-        };
-
-        // Handle Right Button Click (Next)
-        if (btnRight) {
-            btnRight.addEventListener('click', () => {
-                // Go to next item, if it's the last, loop back to the first
-                currentIndex2 = (currentIndex2 + 1) % items.length; // Looping behavior
-                updateGalleryPosition();
-                console.log(`Moved Right - Current Index: ${currentIndex2}`);
-            });
+    // Function to calculate item width after DOM content loads
+    const calculateItemWidth = () => {
+        if (items.length > 0) {
+            itemWidth = items[0].getBoundingClientRect().width + 20; // More accurate width calculation
+            console.log(`Updated Item width: ${itemWidth}px`);
         } else {
-            console.error("Error: Gallery right button not found.");
+            console.error("Error: No gallery items found.");
         }
+    };
 
-        // Handle Left Button Click (Previous)
-        if (btnLeft) {
-            btnLeft.addEventListener('click', () => {
-                // Go to previous item, if it's the first, loop back to the last
-                currentIndex2 = (currentIndex2 - 1 + items.length) % items.length; // Looping behavior
-                updateGalleryPosition();
-                console.log(`Moved Left - Current Index: ${currentIndex2}`);
-            });
-        } else {
-            console.error("Error: Gallery left button not found.");
-        }
+    // Function to update the gallery position based on the current index
+    const updateGalleryPosition = () => {
+        gallery.style.transition = 'transform 0.5s ease';  // Smooth transition
+        gallery.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
+    };
 
-        // Recalculate item width only after the page loads
-        window.addEventListener('load', () => {
-            calculateItemWidth();
-            updateGalleryPosition();  // Ensures correct position on load
-        });
-
-        // Recalculate on window resize
-        window.addEventListener('resize', () => {
-            calculateItemWidth();
+    // Handle Right Button Click (Next)
+    if (btnRight) {
+        btnRight.addEventListener('click', () => {
+            // Go to next item, if it's the last, loop back to the first
+            currentIndex2 = (currentIndex2 + 1) % items.length; // Looping behavior
             updateGalleryPosition();
+            console.log(`Moved Right - Current Index: ${currentIndex2}`);
         });
+    } else {
+        console.error("Error: Gallery right button not found.");
+    }
+
+    // Handle Left Button Click (Previous)
+    if (btnLeft) {
+        btnLeft.addEventListener('click', () => {
+            // Go to previous item, if it's the first, loop back to the last
+            currentIndex2 = (currentIndex2 - 1 + items.length) % items.length; // Looping behavior
+            updateGalleryPosition();
+            console.log(`Moved Left - Current Index: ${currentIndex2}`);
+        });
+    } else {
+        console.error("Error: Gallery left button not found.");
+    }
+
+    // Recalculate item width only after the page loads
+    window.addEventListener('load', () => {
+        calculateItemWidth();
+        updateGalleryPosition();  // Ensures correct position on load
+    });
+
+    // Recalculate on window resize
+    window.addEventListener('resize', () => {
+        calculateItemWidth();
+        updateGalleryPosition();
+    });
 
 });
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const gallery = document.querySelector('.gallery');
     const galleryItems = document.querySelectorAll('.gallery-item');
     const leftArrow = document.getElementById('arrow-left2');
@@ -165,3 +165,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize
     updateArrows();
 });
+
