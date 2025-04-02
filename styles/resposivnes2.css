@@ -67,12 +67,12 @@
         height: 70px;
     }
     /*SECTION FOUR*/
-    .left{
-        height: 80dvh;
-    }
-    .right{
-        height: 80dvh;
-    }
+    /*.left{*/
+    /*    height: 80dvh;*/
+    /*}*/
+    /*.right{*/
+    /*    height: 80dvh;*/
+    /*}*/
     .desc{
         margin-left: 150px;
     }
@@ -129,12 +129,12 @@
         font-size: 0.5rem;
     }
     /*SECTION FOUR*/
-    .left{
-        height: 60dvh;
-    }
-    .right{
-        height: 60dvh;
-    }
+    /*.left{*/
+    /*    height: 60dvh;*/
+    /*}*/
+    /*.right{*/
+    /*    height: 60dvh;*/
+    /*}*/
     .card{
         padding-top: 0;
         width: 600px;
@@ -419,13 +419,13 @@
         margin-left: -45px;
         margin-top: 80px;
     }
-    .left{
-        height: 20dvh;
-        /*overflow-y: hidden;*/
-    }
-    .right{
-        height: 20dvh;
-    }
+    /*.left{*/
+    /*    height: 20dvh;*/
+    /*    !*overflow-y: hidden;*!*/
+    /*}*/
+    /*.right{*/
+    /*    height: 20dvh;*/
+    /*}*/
     .desc{
         margin-left: 50px;
         top: 15%;
