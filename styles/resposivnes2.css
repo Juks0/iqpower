@@ -46,7 +46,7 @@
         top: 10%;
     }
     .section-five{
-        height: 60dvh;
+        height: auto;
     }
 }
 @media (max-width: 1536px) {
@@ -87,7 +87,7 @@
     }
     /*SECTION FIVE*/
     .section-five{
-        height: 65dvh;
+        height: auto;
     }
     .container-five{
         height: 70%;
@@ -104,7 +104,7 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: 40dvh;
+        height: auto;
     }
     .section-six .map {
         right: 3%;
@@ -277,7 +277,7 @@
     }
     /*SECTION THREE*/
     .section-three{
-        height: 85dvh;
+        height: auto;
     }
     .text-overlay{
         top: 40%;
@@ -313,7 +313,7 @@
     }
     /*SECTION FIVE*/
     .section-five{
-        height: 55dvh;
+        height: auto;
     }
     .container-five{
         height: 85%;
@@ -374,7 +374,7 @@
     }
     /*SECTION FIVE*/
     .section-five{
-        height: 50dvh;
+        height: auto;
     }
     .container-five{
         height: 80%;
@@ -407,9 +407,9 @@
         width: 100%;
     }
     /*SECTION FOUR*/
-    .section-four{
-        height: 75dvh;
-    }
+    /*.section-four{*/
+    /*    height: auto;*/
+    /*}*/
     .stack-area{
         flex-direction: column;
         height: auto;
@@ -458,7 +458,7 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: 70dvh;
+        height: auto;
     }
     .section-six .map {
         top: 50%;
