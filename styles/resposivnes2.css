@@ -1,8 +1,8 @@
 @media only screen and (orientation: portrait) {
-    .section-two {
-        /*background-color: red;*/
-        min-height: 85dvh;
-    }
+    /*.section-two {*/
+    /*    !*background-color: red;*!*/
+    /*    min-height: 85dvh;*/
+    /*}*/
 }
 
 
@@ -51,7 +51,7 @@
 }
 @media (max-width: 1536px) {
     .section-two{
-        height: 60dvh;
+        height: auto;
     }
     .s-header h2 {
         font-size: 1.5rem;
@@ -243,7 +243,7 @@
         margin: 0 50px;
     }
     .section-two{
-        height: 55dvh;
+        height: auto;
     }
     .full-text,.short-text,.ultra-short-text{
         justify-content: center;
@@ -343,7 +343,7 @@
 }
 @media (max-width: 475px) {
     .section-two{
-        height: 45dvh;
+        height: auto;
     }
     .s-header h2 {
         font-size: 0.9rem;
@@ -388,7 +388,7 @@
 @media (max-width: 425px) {
     /*SECTION TWO*/
     .section-two{
-        height: 50dvh;
+        height: auto;
     }
     .full-text,.short-text {
         display: none;

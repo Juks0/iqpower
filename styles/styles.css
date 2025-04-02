@@ -22,6 +22,7 @@ body{
     font-variation-settings:
             "wdth" 100;
     font-size: 30px;
+
 }
 
 
@@ -90,21 +91,32 @@ body{
 .short-text,.ultra-short-text{
     display: none;
 }
-.offer-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    text-align: center;
-    margin: 0 140px;
-}
 
 .s-header{
     padding: 75px;
     margin: 0 auto;
     width: fit-content;
     text-align: center;
+}
+.offer-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+.offer-box {
+    display: flex;
+    flex-direction: column; /* Stack elements inside offer-box vertically */
+    align-items: center; /* Center-align all child elements horizontally */
+    text-align: center;
+    margin-bottom: 50px;
 
 }
+/*.full-text,.short-text,.ultra-short-text{*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 70%;*/
+/*}*/
 .s-header h2{
 
     font-size: 2vw;
