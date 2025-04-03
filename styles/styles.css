@@ -305,6 +305,8 @@ body{
 }
 
 .title {
+    z-index: 5;
+
     height: auto;
     overflow-y: hidden;
     /*width: 800px;*/
@@ -317,6 +319,7 @@ body{
 }
 
 .rainbow {
+    z-index: 5;
     margin-top: -30px;
     /*z-index: 100;*/
     background-image: linear-gradient(90deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffd5, #0047ff, #7a00ff, #ff00b3);
@@ -382,6 +385,7 @@ body{
 /*    overflow-y: hidden;*/
 /*}*/
 .card {
+    z-index: 3;
     object-fit: contain; /* Ensures the whole image stays visible */
     width: 100%;
     position: absolute;
