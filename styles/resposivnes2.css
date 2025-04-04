@@ -429,7 +429,7 @@
 
     /*SECTION FIVE*/
     .section-five{
-        height: 70dvh;
+        height: auto;
     }
     .container-five{
         height: 60%;
