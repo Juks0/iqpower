@@ -402,7 +402,8 @@
     }
     /*SECTION FOUR*/
     .card{
-        width: 100%;
+        width: 350px;
+        height: 350px;
         /*height: 500px;*/
     }
     .arrows{
@@ -465,8 +466,8 @@
     }
     .card{
         margin-top: -150px;
-        width: 90%;
-        height: auto;
+        width: 350px;
+        height: 350px;
     }
 
     .desc{
@@ -545,6 +546,11 @@
     }
     .rainbow{
         font-size: 1.4rem;
+    }
+    .card{
+        width: 350px;
+        height: 350px;
+        /*height: 500px;*/
     }
     /*SECTION FIVE*/
 
