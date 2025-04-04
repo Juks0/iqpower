@@ -90,7 +90,7 @@
         height: auto;
     }
     .container-five{
-        height: 70%;
+        height: 60%;
     }
     .section-five h1{
         font-size: 40px;
@@ -268,25 +268,29 @@
         align-items: center;
         width: 70%;
     }
+
     .offer-container {
         flex-direction: column;
     }
     .s-header h2 {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
+        font-weight: 600;
     }
     .s-header p{
-        font-weight: 480;
-        font-size: 0.55rem;
-        width: 70%;
+        font-weight: 450;
+        font-size: 0.75rem;
+        width: 80%;
     }
     .s-header hr{
         margin-top: 40px;
     }
     .offer-box h3{
-        font-size: 0.80rem;
+        font-size: 1rem;
     }
     .offer-box p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        font-weight: 450;
+        width: 60%;
     }
     .offer-image{
         height: 55px;
@@ -344,7 +348,7 @@
         height: auto;
     }
     .container-five{
-        height: 85%;
+        height: 65%;
     }
     .c-btn{
         width: 30%;
@@ -383,8 +387,7 @@
     }
     .s-header p{
         font-size: 0.45rem;
-        /*max-width: 85%;*/
-        /*font-size: 6rem;*/
+
     }
     .offer-container{
         margin: 0 10px;
@@ -394,8 +397,15 @@
         width: 55px;
         margin-bottom: 10px;
     }
+    .s-header p {
+        font-size: 0.55rem;
+        width: 80%;
+    }
+    .offer-box h3{
+        font-size: 0.79rem;
+    }
     .offer-box p{
-        font-size: 0.43rem;
+        font-size: 0.53rem;
     }
     .s-header {
         padding: 55px 0;
@@ -422,11 +432,16 @@
         height: auto;
     }
     .container-five{
-        height: 80%;
+        height: 60%;
     }
-
     .c-btn{
         width: 60%;
+    }
+    .l-text{
+        display: none;
+    }
+    .s-text{
+        display: block;
     }
 
 }
@@ -435,14 +450,14 @@
     .section-two{
         height: auto;
     }
-    .full-text,.short-text {
-        width: 80%;
-        display: none;
-    }
-    .ultra-short-text{
-        display: block;
-        width: 50%;
-    }
+    /*.full-text,.short-text {*/
+    /*    width: 80%;*/
+    /*    display: none;*/
+    /*}*/
+    /*.ultra-short-text{*/
+    /*    display: block;*/
+    /*    width: 50%;*/
+    /*}*/
     .s-header p {
         width: 100%;
     }
@@ -510,7 +525,7 @@
     .section-five p {
         font-size: 0.5rem;
         max-width: 75%;
-    }
+        }
     }
 @media (max-width: 375px) {
 
@@ -548,8 +563,8 @@
         font-size: 1.4rem;
     }
     .card{
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         /*height: 500px;*/
     }
     /*SECTION FIVE*/
