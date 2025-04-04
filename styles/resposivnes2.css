@@ -458,9 +458,9 @@
     /*    display: block;*/
     /*    width: 50%;*/
     /*}*/
-    .s-header p {
-        width: 100%;
-    }
+    /*.s-header p {*/
+    /*    width: 100%;*/
+    /*}*/
     .offer-box h3{
         font-size: 0.5rem;
     }
