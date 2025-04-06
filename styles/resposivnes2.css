@@ -107,7 +107,7 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: auto;
+        height: 80dvh;
     }
     .section-six .map {
         right: 3%;
@@ -224,10 +224,13 @@
         width: 22%;
     }
     /*SECTION SIX*/
+    .section-six{
+        height: 60dvh;
+    }
     .section-six .map {
-        width: 400px;
+        width: 500px;
         height: 350px;
-        right: 3%;
+        /*right: 3%;*/
         top: 10%;
     }
     .section-six h1 {
@@ -373,6 +376,10 @@
     }
     .c-btn{
         width: 30%;
+    }
+    .section-six .map {
+        width: 400px;
+
     }
 }
 
@@ -542,7 +549,7 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: auto;
+        height: 100dvh;
     }
     .section-six .map {
         top: 50%;
