@@ -316,12 +316,19 @@
     .swiper-slide:hover .gal,
     .swiper-slide:hover .text-overlay,
     .swiper-slide:hover {
+        /*transform: none;*/
+
         pointer-events: none; /* Prevents interaction */
-        all: unset; /* Removes hover styles */
+        /*all: unset; !* Removes hover styles *!*/
     }
     .gal{
+
         pointer-events: none; /* Disable all interactions */
         height: 650px;
+        /*filter: none;*/
+        filter: brightness(50%);
+
+        transition: none;
     }
     /*SECTION FOUR*/
     .card{
