@@ -7,6 +7,9 @@
 
 
 @media (min-width: 2100px) {
+    .section-two{
+        height: 100vh;
+    }
     .s-header p {
         font-size: 1rem;
     }
@@ -307,8 +310,18 @@
     .swiper-button-next, .swiper-button-prev{
         top: 45%
     }
+    .swiper{
+        width: 100%;
+    }
+    .swiper-slide:hover .gal,
+    .swiper-slide:hover .text-overlay,
+    .swiper-slide:hover {
+        pointer-events: none; /* Prevents interaction */
+        all: unset; /* Removes hover styles */
+    }
     .gal{
-        height: 750px;
+        pointer-events: none; /* Disable all interactions */
+        height: 650px;
     }
     /*SECTION FOUR*/
     .card{
@@ -334,6 +347,7 @@
         left: 0;
 
     }
+
     .title{
         font-size: 1.5rem;
     }
@@ -423,10 +437,10 @@
         /*height: 500px;*/
     }
     .arrows{
-       display: none;
+        padding-left: 100px;
+
     }
     .arrow-left, .arrow-right {
-        display: none;
 
         padding: 8px 8px;
         width: 35px;
@@ -471,9 +485,7 @@
         font-size: 0.5rem;
     }
     /*SECTION THREE*/
-    .swiper{
-        width: 100%;
-    }
+
     /*SECTION FOUR*/
     .section-four{
         height: 85dvh;
