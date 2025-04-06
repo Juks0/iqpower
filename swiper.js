@@ -13,6 +13,10 @@ let swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
     mousewheel: true,
     keyboard: true,
     breakpoints: {
