@@ -69,6 +69,11 @@
         width: 70px;
         height: 70px;
     }
+    /*SECTION THREE*/
+    .text-overlay{
+        top:20%;
+
+    }
     /*SECTION FOUR*/
     .title  {
         font-size: 2.5rem;
@@ -90,7 +95,7 @@
     }
     /*SECTION FIVE*/
     .section-five{
-        height: auto;
+        height: 80dvh;
     }
     .container-five{
         height: 60%;
@@ -107,11 +112,11 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: 80dvh;
+        height:60dvh;
     }
     .section-six .map {
         right: 3%;
-        top: 0;
+        top: 10%;
         width: 600px;
         height: 470px;
     }
@@ -125,6 +130,9 @@
     }
 }
 @media (max-width: 1280px) {
+    .section-three{
+        height: 90dvh;
+    }
     .s-header h2 {
         font-size: 1.4rem;
     }
@@ -158,7 +166,9 @@
     .arrows{
         padding-left: 100px;
     }
-
+    /*.swiper{*/
+    /*    margin-bottom: 50px;*/
+    /*}*/
     /*SECTION FIVE*/
     .c-btn{
         width: 20%;
@@ -315,6 +325,8 @@
     }
     .swiper{
         width: 100%;
+        margin-bottom: 50px;
+
     }
     .swiper-slide:hover .gal,
     .swiper-slide:hover .text-overlay,
