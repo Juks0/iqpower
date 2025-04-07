@@ -23,10 +23,18 @@ let swiper = new Swiper(".mySwiper", {
         0: {
             slidesPerView:1,
             spaceBetween: 0,
+            preventClicks: true, // Prevent click events
+            preventClicksPropagation: false, // Allow other interactions like swiping
+            hideOnClick: false, // Do not hide the slider on click
+            clickable: false, // Allow pagination clicks
         },
         500: {
             slidesPerView:2,
             spaceBetween: 5,
+            preventClicks: true, // Prevent click events
+            preventClicksPropagation: false, // Allow other interactions like swiping
+            hideOnClick: false, // Do not hide the slider on click
+            clickable: false, // Allow pagination clicks
         },
         768:{
             slidesPerView:2,
