@@ -1,12 +1,15 @@
 @media only screen and (orientation: portrait) {
-    .section-two {
-        /*background-color: red;*/
-        min-height: 85dvh;
-    }
+    /*.section-two {*/
+    /*    !*background-color: red;*!*/
+    /*    min-height: 85dvh;*/
+    /*}*/
 }
 
 
 @media (min-width: 2100px) {
+    .section-two{
+        height: 100vh;
+    }
     .s-header p {
         font-size: 1rem;
     }
@@ -46,12 +49,12 @@
         top: 10%;
     }
     .section-five{
-        height: 60dvh;
+        height: auto;
     }
 }
 @media (max-width: 1536px) {
     .section-two{
-        height: 60dvh;
+        height: auto;
     }
     .s-header h2 {
         font-size: 1.5rem;
@@ -66,31 +69,36 @@
         width: 70px;
         height: 70px;
     }
-    /*SECTION FOUR*/
-    .left{
-        height: 80dvh;
+    /*SECTION THREE*/
+    .text-overlay{
+        top:20%;
+
     }
-    .right{
-        height: 80dvh;
+    /*SECTION FOUR*/
+    .title  {
+        font-size: 2.5rem;
+    }
+    .rainbow{
+        font-size: 2.5rem;
+        margin-top: 0;
     }
     .desc{
         margin-left: 150px;
     }
     .card{
-        top: 20%;
-        width: 700px;
-        height: 700px;
+        /*top: 20%;*/
+        width: 70%;
     }
     .arrows{
-        top: 25%;
-        left: -32%;
+        /*top: 25%;*/
+        left: 6%;
     }
     /*SECTION FIVE*/
     .section-five{
-        height: 65dvh;
+        height: 80dvh;
     }
     .container-five{
-        height: 70%;
+        height: 60%;
     }
     .section-five h1{
         font-size: 40px;
@@ -104,11 +112,11 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: 40dvh;
+        height:60dvh;
     }
     .section-six .map {
         right: 3%;
-        top: 0;
+        top: 10%;
         width: 600px;
         height: 470px;
     }
@@ -122,6 +130,9 @@
     }
 }
 @media (max-width: 1280px) {
+    .section-three{
+        height: 90dvh;
+    }
     .s-header h2 {
         font-size: 1.4rem;
     }
@@ -129,33 +140,35 @@
         font-size: 0.5rem;
     }
     /*SECTION FOUR*/
-    .left{
-        height: 60dvh;
-    }
-    .right{
-        height: 60dvh;
-    }
+    /*.left{*/
+    /*    height: 60dvh;*/
+    /*}*/
+    /*.right{*/
+    /*    height: 60dvh;*/
+    /*}*/
     .card{
         padding-top: 0;
-        width: 600px;
+        width: 55%;
         /*height: 500px;*/
     }
     .title{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .rainbow{
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         margin-top: 0;
 
     }
     .sub-title{
+        font-size: 0.6rem;
         font-weight: 500;
     }
     .arrows{
-        top: 28%;
-        left: -30%;
+        padding-left: 100px;
     }
-
+    /*.swiper{*/
+    /*    margin-bottom: 50px;*/
+    /*}*/
     /*SECTION FIVE*/
     .c-btn{
         width: 20%;
@@ -204,12 +217,11 @@
         margin-left: 100px;
     }
     .card{
-        width: 500px;
+        width: 55%;
         /*height: 500px;*/
     }
     .arrows{
-        top: 25%;
-        left: -29%;
+       padding-left: 200px;
     }
     .title{
         font-size: 2.1rem;
@@ -222,10 +234,13 @@
         width: 22%;
     }
     /*SECTION SIX*/
+    .section-six{
+        height: 60dvh;
+    }
     .section-six .map {
-        width: 400px;
+        width: 500px;
         height: 350px;
-        right: 3%;
+        /*right: 3%;*/
         top: 10%;
     }
     .section-six h1 {
@@ -238,37 +253,60 @@
         font-size: 15px;
     }
 }
+@media (max-width: 930px) {
+    .section-four{
+        height: 110dvh;
+    }
+    .stack-area{
+        flex-direction: column;
+        height: auto;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+    .arrows{
+        padding-left: 0;
+        top: -10%;
+        left: 0;
+    }
+
+}
 @media (max-width: 768px) {
     .offer-container{
         margin: 0 50px;
     }
     .section-two{
-        height: 55dvh;
+        height: auto;
     }
     .full-text,.short-text,.ultra-short-text{
         justify-content: center;
         align-items: center;
         width: 70%;
     }
+
     .offer-container {
         flex-direction: column;
     }
     .s-header h2 {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
+        font-weight: 600;
     }
     .s-header p{
-        font-weight: 480;
-        font-size: 0.55rem;
-        width: 70%;
+        font-weight: 450;
+        font-size: 0.75rem;
+        width: 80%;
     }
     .s-header hr{
         margin-top: 40px;
     }
     .offer-box h3{
-        font-size: 0.80rem;
+        font-size: 1rem;
     }
     .offer-box p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        font-weight: 450;
+        width: 60%;
     }
     .offer-image{
         height: 55px;
@@ -277,7 +315,7 @@
     }
     /*SECTION THREE*/
     .section-three{
-        height: 85dvh;
+        height: auto;
     }
     .text-overlay{
         top: 40%;
@@ -285,13 +323,36 @@
     .swiper-button-next, .swiper-button-prev{
         top: 45%
     }
+    .swiper{
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+    .swiper-slide:hover .gal,
+    .swiper-slide:hover .text-overlay,
+    .swiper-slide:hover {
+        /*transform: none;*/
+
+        pointer-events: none; /* Prevents interaction */
+        /*all: unset; !* Removes hover styles *!*/
+    }
     .gal{
-        height: 750px;
+
+        pointer-events: none; /* Disable all interactions */
+        height: 650px;
+        /*filter: none;*/
+        filter: brightness(50%);
+
+        transition: none;
     }
     /*SECTION FOUR*/
     .card{
         width: 400px;
         /*height: 500px;*/
+    }
+    .stack-area{
+        flex-direction: column;
+        height: auto;
     }
     .desc{
         margin-left: 50px;
@@ -302,6 +363,13 @@
         font-size: 0.60rem;
         font-weight: 500;
     }
+    .arrows{
+        padding-left: 0;
+        top: -10%;
+        left: 0;
+
+    }
+
     .title{
         font-size: 1.5rem;
     }
@@ -313,13 +381,17 @@
     }
     /*SECTION FIVE*/
     .section-five{
-        height: 55dvh;
+        height: auto;
     }
     .container-five{
-        height: 85%;
+        height: 65%;
     }
     .c-btn{
         width: 30%;
+    }
+    .section-six .map {
+        width: 400px;
+
     }
 }
 
@@ -333,8 +405,13 @@
     }
     /*SECTION FOUR*/
     .card{
-        width: 350px;
+        width: 100%;
         /*height: 500px;*/
+    }
+    .arrows{
+        padding-left: 0;
+        top: -10%;
+        left: 15%;
     }
     /*SECTION FIVE*/
     .c-btn{
@@ -343,15 +420,14 @@
 }
 @media (max-width: 475px) {
     .section-two{
-        height: 45dvh;
+        height: auto;
     }
     .s-header h2 {
         font-size: 0.9rem;
     }
     .s-header p{
         font-size: 0.45rem;
-        /*max-width: 85%;*/
-        /*font-size: 6rem;*/
+
     }
     .offer-container{
         margin: 0 10px;
@@ -361,78 +437,105 @@
         width: 55px;
         margin-bottom: 10px;
     }
+    .s-header p {
+        font-size: 0.55rem;
+        width: 80%;
+    }
+    .offer-box h3{
+        font-size: 0.79rem;
+    }
     .offer-box p{
-        font-size: 0.43rem;
+        font-size: 0.53rem;
     }
     .s-header {
-        padding: 55px;
+        padding: 55px 0;
+    }
+    .section-three{
+        height: 100dvh;
+    }
+    .gal{
+        height: 500px;
     }
     /*SECTION FOUR*/
     .card{
-        width: 300px;
+        width: 350px;
+        height: 350px;
         /*height: 500px;*/
     }
-    /*SECTION FIVE*/
-    .section-five{
-        height: 50dvh;
+    .arrows{
+        padding-left: 100px;
+
     }
-    .container-five{
-        height: 80%;
+    .arrow-left, .arrow-right {
+
+        padding: 8px 8px;
+        width: 35px;
+        height: 35px;
     }
 
+    /*SECTION FIVE*/
+    .section-five{
+        height: auto;
+    }
+    .container-five{
+        height: 60%;
+    }
     .c-btn{
         width: 60%;
+    }
+    .l-text{
+        display: none;
+    }
+    .s-text{
+        display: block;
     }
 
 }
 @media (max-width: 425px) {
     /*SECTION TWO*/
     .section-two{
-        height: 50dvh;
+        height: auto;
     }
-    .full-text,.short-text {
-        display: none;
-    }
-    .ultra-short-text{
-        display: block;
-    }
-    .s-header p {
-        width: 100%;
-    }
+    /*.full-text,.short-text {*/
+    /*    width: 80%;*/
+    /*    display: none;*/
+    /*}*/
+    /*.ultra-short-text{*/
+    /*    display: block;*/
+    /*    width: 50%;*/
+    /*}*/
+    /*.s-header p {*/
+    /*    width: 100%;*/
+    /*}*/
     .offer-box h3{
         font-size: 0.5rem;
     }
     /*SECTION THREE*/
-    .swiper{
-        width: 100%;
-    }
+
     /*SECTION FOUR*/
     .section-four{
-        height: 75dvh;
+        height: 85dvh;
     }
     .stack-area{
         flex-direction: column;
         height: auto;
     }
-    .card{
-        width: 120%;
-        margin-left: -45px;
-        margin-top: 80px;
-    }
     .left{
-        height: 20dvh;
-        /*overflow-y: hidden;*/
+        height: auto;
     }
-    .right{
-        height: 20dvh;
+    .card{
+        margin-top: -150px;
+        width: 350px;
+        height: 350px;
     }
+
     .desc{
         margin-left: 50px;
         top: 15%;
     }
     .arrows{
-        top: 25%;
-        left: 20%;
+        top: -25%;
+        left: 90%;
     }
     .sub-title{
         width: 90%;
@@ -458,7 +561,7 @@
     }
     /*SECTION SIX*/
     .section-six{
-        height: 70dvh;
+        height: 100dvh;
     }
     .section-six .map {
         top: 50%;
@@ -466,7 +569,7 @@
     .section-five p {
         font-size: 0.5rem;
         max-width: 75%;
-    }
+        }
     }
 @media (max-width: 375px) {
 
@@ -486,7 +589,7 @@
     .section-six .map{
         width: 300px;
         height: 300px;
-        right: 12%;
+        right: 10%;
     }
 }
 @media (max-width: 320px) {
@@ -503,6 +606,11 @@
     .rainbow{
         font-size: 1.4rem;
     }
+    .card{
+        width: 300px;
+        height: 300px;
+        /*height: 500px;*/
+    }
     /*SECTION FIVE*/
 
     .c-btn{
@@ -513,7 +621,7 @@
         max-width: 80%;
     }
     .section-six .map{
-        right: 4%;
+        right: 3%;
     }
 }
 
