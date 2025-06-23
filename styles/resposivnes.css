@@ -95,10 +95,10 @@
     }
     /*SECTION FIVE*/
     .section-five{
-        height: 80dvh;
+        height: 100dvh;
     }
     .container-five{
-        height: 60%;
+        height: 80%;
     }
     .section-five h1{
         font-size: 40px;
@@ -384,7 +384,7 @@
         height: auto;
     }
     .container-five{
-        height: 65%;
+        height: 85%;
     }
     .c-btn{
         width: 30%;
@@ -479,7 +479,7 @@
         height: auto;
     }
     .container-five{
-        height: 60%;
+        height: 75%;
     }
     .c-btn{
         width: 60%;
